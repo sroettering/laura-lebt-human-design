@@ -71,8 +71,8 @@ p, li {
 
 .hero-avatar {
     position: relative;
-    width: 12rem;
-    height: 12rem;
+    width: 16rem;
+    height: 16rem;
     overflow: hidden;
     border-radius: 50%;
     border: 4px solid #FFFFFF;
@@ -605,12 +605,13 @@ p, li {
 .trust-section .image {
     width: 16rem;
     aspect-ratio: 0.75;
-    background-image: url("./images/laura-2.jpg");
-    background-size: cover;
+    background-image: url("./images/laura-3.png");
+    background-size: contain;
     background-position: center;
-    border: 4px solid #FFFFFF;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    border-radius: 24px;
+    background-repeat: no-repeat;
+    /*border: 4px solid #FFFFFF;*/
+    /*box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);*/
+    /*border-radius: 24px;*/
 }
 
 .trust-container {
@@ -725,3 +726,124 @@ footer .copyright {
     color: #A8A29E;
     text-align: center;
 }
+
+/* Impressum / Legal Pages */
+.legal-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 6rem calc((100% - 66rem) / 2);
+    background: #FAF6F0;
+    min-height: 100vh;
+}
+
+@media(max-width: 48rem) {
+    .legal-section {
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+    }
+}
+
+.legal-container {
+    width: 100%;
+    max-width: 66rem;
+}
+
+.legal-container h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    color: #292524;
+    margin-bottom: 2rem;
+}
+
+.legal-container h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    color: #292524;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.legal-container h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #292524;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.legal-container p,
+.legal-container li {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #57534E;
+    margin-bottom: 1rem;
+}
+
+.legal-container ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.legal-container a {
+    color: #F4A460;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.legal-container a:hover {
+    color: #DC9354;
+    text-decoration: underline;
+}
+
+.legal-container strong {
+    font-weight: 600;
+    color: #292524;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    background: #F4A460;
+    border-radius: 9999px;
+    font-family: 'Montserrat', "sans-serif";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: background 0.2s;
+}
+
+.back-link:hover {
+    background: #DC9354;
+    color: #FFFFFF;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #E8DCC4;
+    margin: 2rem 0;
+}
+
