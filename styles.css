@@ -53,8 +53,12 @@ p, li {
     background-image: url('./images/hero-background.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
+
+    @media(min-width: 48rem) {
+        background-attachment: fixed;
+    }
 }
 
 .hero-content {
