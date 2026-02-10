@@ -235,6 +235,10 @@ p, li {
 .topic {
     width: 20rem;
     flex: 0 0 20rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
 }
 
 .topic img {
