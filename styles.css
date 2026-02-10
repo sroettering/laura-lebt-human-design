@@ -301,6 +301,8 @@ p, li {
 
     @media (max-width: 48rem) {
         width: 100%;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -496,6 +498,10 @@ p, li {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
     overflow: hidden;
+
+    @media (max-width: 48rem) {
+        height: auto;
+    }
 }
 
 .offer-card.prominent {
@@ -609,6 +615,10 @@ p, li {
     font-size: 16px;
     line-height: 20px;
     color: #57534E;
+
+    @media (max-width: 48rem) {
+        margin-top: 2rem;
+    }
 }
 
 .offer-card-body .offer-price {
