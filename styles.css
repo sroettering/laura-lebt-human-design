@@ -632,6 +632,7 @@ p, li {
 
     @media (max-width: 48rem) {
         margin-top: 2rem;
+        text-align: center;
     }
 }
 
