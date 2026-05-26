@@ -46,7 +46,7 @@ p, li {
     position: relative;
     width: 100svw;
     height: 100svh;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
@@ -95,7 +95,7 @@ p, li {
 
     @media(max-width: 48rem) {
         font-size: 48px;
-        line-height: 56px;
+        line-height: 52px;
     }
 }
 
